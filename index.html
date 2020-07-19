@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <section class="wrapper">
+        <div class="header">
+            <h3 style="padding-top: 10px;">TIP CALCULATOR</h3>
+        </div>
+        <div class="main ttext">
+            <label for="minput" class="addpadd">How much was your bill?</label>
+            <div class="addpadd">
+                <span>$</span>
+                <input type="number" name="minput" step=".1" placeholder="Bill Amount" id="minput">
+            </div>
+            <label for="minput" class="addpadd">How was your service</label>
+            <div class="addpadd">
+                <select id="sinput">
+                    <option value="30">30% - Extraorinary</option>
+                    <option value="20">20% - Good</option>
+                    <option value="15">15% - It was OK</option>
+                    <option value="10">10% - Bad</option>
+                    <option value="5">5% - Terrible</option>
+                </select>
+            </div>
+            <label for="minput" class="addpadd">How many people are sharing the bill?</label>
+            <div class="addpadd">
+
+                <input type="number" name="minput" step= "1" placeholder="Number of People" id="pint" >
+                <span> people</span>
+            </div>
+        </div>
+        <div class="answer">
+        	<button type="button" onclick="calc()">CALCULATE</button>
+        	<div class="ttext" id="tamt"></div>
+        	<div id="fans"></div>
+        	<div id="each"></div>
+        </div>
+    </section>
+    <script type="text/javascript" src="custom.js"></script>
+</body>
+
+</html>
